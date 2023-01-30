@@ -1,0 +1,260 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{anderegg2004convolution}
+Rolf Anderegg, Norbert Felber, Wolfgang Fichtner, and Ulrich Franke.
+\newblock Implementation of high-order convolution algorithms with low latency
+  on silicon chips.
+\newblock In {\em Audio Engineering Society Convention 117}. Audio Engineering
+  Society, 2004.
+
+\bibitem{badeau2019common}
+Roland Badeau.
+\newblock Common mathematical framework for stochastic reverberation models.
+\newblock {\em The Journal of the Acoustical Society of America},
+  145(4):2733--2745, 2019.
+
+\bibitem{bryan2020impulse}
+Nicholas~J Bryan.
+\newblock Impulse response data augmentation and deep neural networks for blind
+  room acoustic parameter estimation.
+\newblock In {\em ICASSP 2020-2020 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 1--5. IEEE, 2020.
+
+\bibitem{Chen2017}
+Lele Chen, Sudhanshu Srivastava, Zhiyao Duan, and Chenliang Xu.
+\newblock Deep cross-modal audio-visual generation.
+\newblock {\em CoRR}, abs/1704.08292, 2017.
+
+\bibitem{devries2020on}
+Terrance DeVries, Adriana Romero, Luis Pineda, Graham~W. Taylor, and Michal
+  Drozdzal.
+\newblock On the evaluation of conditional {\{}gan{\}}s, 2020.
+
+\bibitem{donahue2018adversarial}
+Chris Donahue, Julian McAuley, and Miller Puckette.
+\newblock Adversarial audio synthesis.
+\newblock In {\em International Conference on Learning Representations}, 2019.
+
+\bibitem{engel2018gansynth}
+Jesse Engel, Kumar~Krishna Agrawal, Shuo Chen, Ishaan Gulrajani, Chris Donahue,
+  and Adam Roberts.
+\newblock {GANS}ynth: Adversarial neural audio synthesis.
+\newblock In {\em International Conference on Learning Representations}, 2019.
+
+\bibitem{gao2019visual-sound}
+Ruohan Gao and Kristen Grauman.
+\newblock 2.5d visual sound.
+\newblock In {\em CVPR}, 2019.
+
+\bibitem{monodepth2}
+Cl{\'{e}}ment Godard, Oisin {Mac Aodha}, Michael Firman, and Gabriel~J.
+  Brostow.
+\newblock Digging into self-supervised monocular depth prediction.
+\newblock In {\em The International Conference on Computer Vision (ICCV)},
+  October 2019.
+
+\bibitem{goodfellow2014generative}
+Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
+  Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative adversarial nets.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2672--2680, 2014.
+
+\bibitem{greenhouse1959methods}
+Samuel~W Greenhouse and Seymour Geisser.
+\newblock On methods in the analysis of profile data.
+\newblock {\em Psychometrika}, 24(2):95--112, 1959.
+
+\bibitem{gui2020review}
+Jie Gui, Zhenan Sun, Yonggang Wen, Dacheng Tao, and Jieping Ye.
+\newblock A review on generative adversarial networks: Algorithms, theory, and
+  applications, 2020.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 770--778, 2016.
+
+\bibitem{karras2018progressive}
+Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen.
+\newblock Progressive growing of gans for improved quality, stability, and
+  variation.
+\newblock In {\em International Conference on Learning Representations}, 2018.
+
+\bibitem{kim2019}
+H. {Kim}, L. {Remaggi}, P.~J.~B. {Jackson}, and A. {Hilton}.
+\newblock Immersive spatial audio reproduction for vr/ar using room acoustic
+  modelling from 360° images.
+\newblock In {\em 2019 IEEE Conference on Virtual Reality and 3D User
+  Interfaces (VR)}, pages 120--126, 2019.
+
+\bibitem{Kon2018}
+Homare Kon and Hideki Koike.
+\newblock Deep neural networks for cross-modal estimations of acoustic
+  reverberation characteristics from two-dimensional images.
+\newblock In {\em Audio Engineering Society}, 05 2018.
+
+\bibitem{Kon2019}
+Homare Kon and Hideki Koike.
+\newblock Estimation of late reverberation characteristics from a single
+  two-dimensional environmental image using convolutional neural networks.
+\newblock {\em Journal of the Audio Engineering Society}, 67:540--548, 08 2019.
+
+\bibitem{Kon2020}
+Homare Kon and Hideki Koike.
+\newblock An auditory scaling method for reverb synthesis from a single
+  two-dimensional image.
+\newblock {\em Acoustical Science and Technology}, 41(4):675--685, 2020.
+
+\bibitem{lee2010approximating}
+Keun~Sup Lee, Nicholas~J Bryan, and Jonathan~S Abel.
+\newblock Approximating measured reverberation using a hybrid fixed/switched
+  convolution structure.
+\newblock In {\em Proceedings of the 13th International Conference on Digital
+  Audio Effects (DAFx’10)}, 2010.
+
+\bibitem{li2018}
+Dingzeyu Li, Timothy~R. Langlois, and Changxi Zheng.
+\newblock Scene-aware audio for 360° videos.
+\newblock {\em ACM Trans. Graph.}, 37(4), July 2018.
+
+\bibitem{maaten2008visualizing}
+Laurens van~der Maaten and Geoffrey Hinton.
+\newblock Visualizing data using t-sne.
+\newblock {\em Journal of machine learning research}, 9(Nov):2579--2605, 2008.
+
+\bibitem{mao2017least}
+Xudong Mao, Qing Li, Haoran Xie, Raymond~YK Lau, Zhen Wang, and Stephen
+  Paul~Smolley.
+\newblock Least squares generative adversarial networks.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 2794--2802, 2017.
+
+\bibitem{jndt60}
+Z. {Meng}, F. {Zhao}, and M. {He}.
+\newblock The just noticeable difference of noise length and reverberation
+  perception.
+\newblock In {\em 2006 International Symposium on Communications and
+  Information Technologies}, pages 418--421, 2006.
+
+\bibitem{mentzer2020high}
+Fabian Mentzer, George~D Toderici, Michael Tschannen, and Eirikur Agustsson.
+\newblock High-fidelity generative image compression.
+\newblock {\em Advances in Neural Information Processing Systems}, 33, 2020.
+
+\bibitem{mirza2014conditional}
+Mehdi Mirza and Simon Osindero.
+\newblock Conditional generative adversarial nets.
+\newblock {\em arXiv preprint arXiv:1411.1784}, 2014.
+
+\bibitem{murphy2010openair}
+Damian~T Murphy and Simon Shelley.
+\newblock Openair: An interactive auralization web resource and database.
+\newblock In {\em Audio Engineering Society Convention 129}. Audio Engineering
+  Society, 2010.
+
+\bibitem{pearson1977tests}
+Egon~S Pearson, Ralph~B D~‘‘'AGOSTINO, and Kimiko~O Bowman.
+\newblock Tests for departure from normality: Comparison of powers.
+\newblock {\em Biometrika}, 64(2):231--246, 1977.
+
+\bibitem{pellegrini2001quality}
+Renato~S Pellegrini.
+\newblock Quality assessment of auditory virtual environments.
+\newblock In {\em Proceedings of the 2001 International Conference on Auditory
+  Display}, 2001.
+
+\bibitem{dalle}
+Aditya Ramesh, Mikhail Pavlov, Gabriel Goh, and Scott Gray.
+\newblock Dall·e: Creating images from text.
+\newblock {\em OpenAI Blog}, 2021.
+
+\bibitem{ratnarajah2021}
+Anton Ratnarajah, Zhenyu Tang, and Dinesh Manocha.
+\newblock Ir-gan: Room impulse response generator for speech augmentation,
+  2021.
+
+\bibitem{reilly1995convolution}
+Andrew Reilly and David McGrath.
+\newblock Convolution processing for realistic reverberation.
+\newblock In {\em Audio Engineering Society Convention 98}. Audio Engineering
+  Society, 1995.
+
+\bibitem{remaggi2019reproducing}
+Luca Remaggi, Hansung Kim, Philip~JB Jackson, and Adrian Hilton.
+\newblock Reproducing real world acoustics in virtual reality using spherical
+  cameras.
+\newblock In {\em Proceedings of the 2019 AES International Conference on
+  Immersive and Interactive Audio}. Audio Engineering Society, 2019.
+
+\bibitem{rettinger1957reverberation}
+Michael Rettinger.
+\newblock Reverberation chambers for broadcasting and recording studios.
+\newblock {\em Journal of the Audio Engineering Society}, 5(1):18--22, 1957.
+
+\bibitem{robjohns1999sony}
+H Robjohns.
+\newblock Sony dre s777 sampling digital reverb.
+\newblock {\em Sound on Sound}, 15, 1999.
+
+\bibitem{sali2020}
+Kaushal Sali and Alexander Lerch.
+\newblock Generating impulse responses using recurrent neural networks, 2020.
+
+\bibitem{Schissler2016}
+Carl Schissler and Dinesh Manocha.
+\newblock Interactive sound propagation and rendering for large multi-source
+  scenes.
+\newblock {\em ACM Trans. Graph.}, 36(4), Sept. 2016.
+
+\bibitem{Schroeder1961}
+M.~R. Schroeder and B.~F. Logan.
+\newblock {“Colorless” Artificial Reverberation}.
+\newblock {\em IRE Transactions on Audio}, 9(6):209--214, 1961.
+
+\bibitem{selvaraju2017grad}
+Ramprasaath~R Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
+  Devi Parikh, and Dhruv Batra.
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock In {\em Proceedings of the IEEE international conference on computer
+  vision}, pages 618--626, 2017.
+
+\bibitem{steinmetz2018}
+Christian Steinmetz.
+\newblock Neuralreverberator, 2018.
+
+\bibitem{traer2016statistics}
+James Traer and Josh~H McDermott.
+\newblock Statistics of natural reverberation enable perceptual separation of
+  sound and space.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  113(48):E7856--E7865, 2016.
+
+\bibitem{valimaki2012fifty}
+Vesa Valimaki, Julian~D Parker, Lauri Savioja, Julius~O Smith, and Jonathan~S
+  Abel.
+\newblock Fifty years of artificial reverberation.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  20(5):1421--1448, 2012.
+
+\bibitem{Oord2016}
+Aäron van~den Oord, Sander Dieleman, Heiga Zen, Karen Simonyan, Oriol Vinyals,
+  Alexander Graves, Nal Kalchbrenner, Andrew Senior, and Koray Kavukcuoglu.
+\newblock Wavenet: A generative model for raw audio.
+\newblock In {\em Arxiv}, 2016.
+
+\bibitem{wang2004image}
+Zhou Wang, Alan~C Bovik, Hamid~R Sheikh, and Eero~P Simoncelli.
+\newblock Image quality assessment: from error visibility to structural
+  similarity.
+\newblock {\em IEEE transactions on image processing}, 13(4):600--612, 2004.
+
+\bibitem{Zhou2014}
+Bolei Zhou, Agata Lapedriza, Jianxiong Xiao, Antonio Torralba, and Aude Oliva.
+\newblock {Learning deep features for scene recognition using places database}.
+\newblock {\em Advances in Neural Information Processing Systems},
+  1(January):487--495, 2014.
+
+\end{thebibliography}
