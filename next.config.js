@@ -3,9 +3,6 @@
 const isProd = process.env.NODE_ENV === "production";
 const path = process.env.NEXT_PUBLIC_DEPLOY_PATH;
 
-const withTM = require("next-transpile-modules")(["three"])
-module.exports = withTM()
-
 const nextConfig = {
     reactStrictMode: true,
     trailingSlash: false,

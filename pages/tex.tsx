@@ -178,7 +178,6 @@ const TeX = () => {
                     case "abstract":
                         return <Center key={key}><Box pt={"xl"} pb={"xl"} style={{maxWidth: "90%"}}><Text size={"sm"}><b>Abstract. </b>{node.content.map(render)}</Text></Box></Center>;
                     case "algorithm":
-                        console.log(node.content);
                         const aCaption = node.content.filter((x: Ast.GenericNode) => x.content === "caption")[0].args.filter((x: Ast.GenericNode) => x.openMark === "{")[0].content.map(render);
                         const algoName = node.content.filter((x: Ast.GenericNode) => x.content === "label")[0].args.filter((x: Ast.GenericNode) => x.openMark === "{")[0].content.map((x: Ast.GenericNode) => x.content).join("");
                         return <Center key={key}>
@@ -224,10 +223,6 @@ const TeX = () => {
 
     return (
         <>
-            <Text mt={100} align={"center"}>Welcome to</Text>
-            <Title mb={200} align={"center"}>
-                    How to Put Almost Anything in a Browser
-            </Title>
             {parsed}
             <br/><br/>
             <Title order={2}>References</Title>

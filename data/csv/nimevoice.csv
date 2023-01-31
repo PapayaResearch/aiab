@@ -1,0 +1,393 @@
+,Title,Year,Tags,I/O,BM,PM,NUM,SYNC,CATEGORY,SUBCATEGORY
+0,Principles for Designing Computer Music Controllers,2001,"voice synthesiser
+real time synthesis
+controler for voice models
+accordion",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+1,Interdisciplinary Applications of New Instruments,2002,"voice command
+voice modification",Voice as control,Spoken voice,Voice as audio,Single voice,Real-time processing,Voice as control,Spoken
+2,Creating a Context for Musical Innovation: A NIME Curriculum,2002,tool to accompany singing,Voice accompaniment,Singing voice,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Other
+3,"Bi-manual mapping experimentation, with angular fun- damental frequency control and sound color navigation",2002,"formant-synthesis model 
+vowel-like singing voice
+frequency control
+vowel articulation
+movement gesture
+glove",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+4,Tongue ‘n’ Groove: An Ultrasound based Music Controller,2002,"musical controller
+tongue shape for real-time control of music
+Movement-Gesture",Voice transformation/modulation/morphing,Singing voice,"Voice as movement/gesture/motor control
+Voice as audio",Single voice,Real-time processing,Voice beyond audio,face trackers
+5,Score Following: State of the Art and New Developments,2003,"score following
+voice analysis
+singing voice",Voice analysis,Singing voice,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Other
+6,Bio-Sensing Systems and Bio-Feedback Systems for Interactive Media Arts,2003,"voice modifications
+gesture - movement",Voice transformation/modulation/morphing,Other voice modalities,"Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Voice in performance/experience,Other
+7,"Designing, Playing, and Performing with a Vision-based Mouth Interface",2003,"vision based
+head-work device
+face tracking
+facial parameters
+output midi control change",Voice as control,Other voice modalities,Voice as movement/gesture/motor control,Single voice,Real-time processing,Voice beyond audio,face trackers
+8,E-mic: Extended Mic-stand Interface Controller,2003,"gestural controler
+device
+voice modifications real-time","Voice transformation/modulation/morphing
+Voice accompaniment",Singing voice,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Hand-based gestures
+9,Bimanuality in Alternate Musical Instruments,2003,"hand-gesture control
+vowl-like sound
+voice synthesis
+mapping strategies
+glove",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+10,"Recycling Music, Answering Back: Toward an Oral Tradition of Electronic Music",2004,voice recording,Voice samples,Singing voice,Voice as audio,Single voice,Use of voice samples,Voice in performance/experience,Other
+11,"The Architecture of Auracle: a Real-Time, Distributed, Collaborative Instrument",2004,"voice as controler
+voice analysis
+group instrument
+indivicual - gorup voice","Voice analysis
+Voice transformation/modulation/morphing",Singing voice,Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Social/ Collaborative / Networked
+12,Acappella synthesis demonstrations using RWC music database,2004,"voice morphing
+voice synthesis","Voice synthesis
+Voice samples","Singing voice
+Spoken voice",Voice as audio,Single voice,Use of voice samples,Control of voice synthesis/morphing,Other
+13,A Novel Face-tracking Mouth Controller and its Application to Interacting with Bioacoustic Models,2004,"face tracking
+vision based
+mouth as a controler
+physical model of bird voice
+bird voice synthesis",Voice transformation/modulation/morphing,Singing voice,Voice as movement/gesture/motor control,Single voice,Real-time processing,Non-human voices,
+14,A Personal Chronology of Audiovisual Systems Research,2005,"voice made visibile
+voice visualisation
+speech visualisation","Voice analysis
+Voice accompaniment","Singing voice
+Spoken voice
+Other voice modalities",Voice as audio,"Multiple voices
+Single voice",Real-time processing,Voice in performance/experience,Voice visualization
+15,HandySinger: Expressive Singing Voice Morphing using Personified Hand-puppet Interface,2005,"speech synthesis
+device
+hand puppet 
+gesture controler
+control parameters of speech",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+16,Voice-Controlled Plucked Bass Guitar Through Two Synthesis Techniques,2005,"singing voice as controller
+voice analysis
+control quitare plucking",Voice as control,Singing voice,Voice as audio,Single voice,Real-time processing,Voice as control,Sung
+17,CyberSong,2005,"performance interface for singers
+stored, processed, and played back
+recording",Voice samples,Singing voice,Voice as audio,Single voice,Use of voice samples,Voice in performance/experience,Other
+18,The Wahwactor: a Voice Controlled Wah-Wha Pedal,2005,"voice analysis 
+speech analysis (wahwah)
+voice as control
+controls effects for an instrument",Voice as control,Singing voice,Voice as audio,Single voice,Real-time processing,Voice as control,Sung
+19,Using Music to Interact with a Virtual Character,2005,"voice analysis
+control character behaviors",Voice as control,Singing voice,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Voice visualization
+20,Real-Time Performance Controllers for Synthesized Singing,2005,"speech synthesis
+controlers",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+21,"Real-time CALM Synthesizer
+New Approaches in Hands-Controlled Voice Synthesis",2006,"voice synthesis
+voice source model
+gesture control for voice synthesis
+different gestural control interfaces : data glove, keyboard, graphic tablet, pedal board",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+22,"GRASSP: Gesturally-Realized Audio, Speech and Song Performance",2006,"glove interface
+speech, song, sound synthesis
+voice synthesis
+gestural control of musical expression 
+gesture-to-voice system",Voice synthesis,"Singing voice
+Spoken voice",Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+23,Learning Musical Instrument Skills Through Interactive Sonification,2006,"voice analysys
+give feeback on singing performance
+",Voice analysis,Singing voice,Voice as audio,Single voice,Real-time processing,Voice training,
+24,HandSketch Bi-Manual Controller,2007,"voice synthesis
+gesture control of voice parameters
+expressive voice
+device tablet",Voice as control,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+25,Matching Parts: Inner Voice Led Control for Symbolic and Audio Accompaniment,2007,"inner voice
+music synthesis",Voice accompaniment,Singing voice,"Voice as audio
+Inner voice",Single voice,Real-time processing,Voice beyond audio ,inner voice
+26,Díamair: Composing for Choir and Integral Music Controller,2007,"choir singing
+interface for conductor to choose voices
+gesture based",Voice accompaniment,Singing voice,Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Social/ Collaborative / Networked
+27,JamiOki-PureJoy: A Game Engine and Instrument for Electronically-Mediated Musical Improvisation,2007,"Gesture based 
+modify voice effects
+voice recordings
+joystick device for control
+","Voice transformation/modulation/morphing
+Voice samples",Singing voice,Voice as audio,Multiple voices,"Real-time processing
+Delayed
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+28,"Circle Canon Chorus System Used To Enjoy A Musical Ensemble Singing ""Frog Round""",2007,"multiuser
+recording voice
+ensemble
+individual - group voice","Voice accompaniment
+Voice samples",Singing voice,Voice as audio,Multiple voices,"Delayed
+Use of voice samples",Voice in performance/experience,Social/ Collaborative / Networked
+29,Discourse analysis evaluation method for expressive musical interfaces,2008,"voice analysis
+voice morphing
+timbral remapping
+invividual - group voice",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Other
+30,Mappe per Affetti Erranti: a Multimodal System for Social Active Listening and Expressive Performance,2008,"gesture-based control
+voice modification",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Multiple voices,"Real-time processing
+Use of voice samples",Voice in performance/experience,Social/ Collaborative / Networked
+31,Gesture ≈ Sound Experiments: Process and Mappings,2008,"gesture-based control
+associated with voical prorotyping and recordings",Voice accompaniment,Singing voice,"Voice as audio
+Voice as movement/gesture/motor control",Multiple voices,Real-time processing,Voice in performance/experience,Other
+32,Evaluation of 3D Haptic Target Rendering to Support Timing in Music Tasks,2009,"voice recording
+device, gesture, force ",Voice samples,Spoken voice,Voice as audio,Single voice,Use of voice samples,,
+33,Mims: Interactive Multimedia Live Performance System,2009,"voice as control
+voice analysis
+voice objects
+from voice to gesture","Voice transformation/modulation/morphing
+Voice samples",Singing voice,Voice as audio,Single voice,"Delayed
+Use of voice samples",Voice in performance/experience,Voice visualization
+34,ForTouch: A Wearable Digital Ventriloquized Actor,2009,"glove device
+gesture controled
+gesture to voice
+voice synthesis
+digital ventriloquism","Voice transformation/modulation/morphing
+Voice samples",Spoken voice,Voice as audio,Single voice,"Delayed
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+35,Re-Designing Principles for Computer Music Controllers: a Case Study of SqueezeVox Maggie,2009,,Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+36,"Words, Movement and Timbre",2009,"voice movements
+timbre
+voice controlled musical instrument",Voice as control,Spoken voice,Voice as movement/gesture/motor control,Single voice,Real-time processing,Voice as control,Spoken
+37,Auditory Masquing: Wearable Sound Systems for Diegetic Character Voices,2010,"wearable device - mask
+voice transformation in performance
+",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Other
+38,V!OCT (Ritual): An Interactive Vocal Work for Bodycoder System and 8 Channel Spatialization,2011,"wearable
+gestures
+voice analysis
+voice as controler",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Hand-based gestures
+39,ROOM#81 - Agent-Based Instrument for Experiencing Architectural and Vocal Cues,2011,"multiusers
+space
+voice synthesis",Voice synthesis,Other voice modalities,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Social/ Collaborative / Networked
+40,The Six Fantasies Machine – an instrument modelling phrases from Paul Lansky’s Six Fantasies,2011,"voice analysis
+voice resynthesis
+voice scuplting
+voice modes (speaking, singing, whispering)
+experience of voices","Voice transformation/modulation/morphing
+Voice samples","Singing voice
+Spoken voice
+Other voice modalities",Voice as audio,"Single voice
+Multiple voices","Real-time processing
+Use of voice samples",Voice in performance/experience,Other
+41,SQUEEZY: Extending a Multi-touch Screen with Force Sensing Objects for Controlling Articulatory Synthesis,2011,"device - tablet
+gesture controlled 
+voice synthesis
+haptic feedback",Voice synthesis,"Spoken voice
+Singing voice",Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+42,A Voice Interface for Sound Generators: adaptive and automatic mapping of gestures to sound,2012,"voice analysis
+vocal gesture
+timbre
+voice-controlled interface",Voice as control,"Singing voice
+Other voice modalities","Voice as audio
+Voice as movement/gesture/motor control",Single voice,"Real-time processing
+Use of voice samples",Voice as control,Sung
+43,Tweet Harp: Laser Harp Generating Voice and Text of Real-time Tweets in Twitter,2012,"voice synthesis reading tweets
+voice as output of instrument 
+voice visualisation",Voice samples,Spoken voice,Voice as audio,Multiple voices,"Real-time processing
+Delayed
+Use of voice samples",Voice in performance/experience,Hand-based gestures
+44,Collaborative composition and socially constructed instruments: Ensemble laptop performance through the lens of ethnography,2012,"voice recordings
+network
+multi-user",Voice samples,"Spoken voice
+Singing voice",Voice as audio,Multiple voices,Use of voice samples,Voice in performance/experience,Social/ Collaborative / Networked
+45,MAGE – A Platform for Tangible Speech Synthesis,2012,"voice synthesis beyond words
+expressive voice
+device",Voice synthesis,Spoken voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+46,Using a seeing/blindfolded paradigm to study audience experiences of live-electronic performances with voice,2012,"experience voice beyond vision
+moive modalities ","Voice accompaniment
+Voice samples","Spoken voice
+Singing voice",Voice as audio,Single voice,"Real-time processing
+Use of voice samples",Voice in performance/experience,Other
+47,VOICON: An Interactive Gestural Microphone For Vocal Performance,2012,"device
+microphone
+interactive
+gesture
+voice modification",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Single voice,Real-time processing,Voice in performance/experience,Hand-based gestures
+48,Concept Tahoe: Microphone Midi Control,2012,"device
+microphone
+control voice effect
+voice transfomration
+gestures","Voice transformation/modulation/morphing
+Voice samples",Singing voice,Voice as audio,Single voice,"Real-time processing
+Use of voice samples",Voice in performance/experience,Hand-based gestures
+49,FutureGrab: A wearable synthesizer using vowel formants,2012,"wearable
+hand gesures
+voice synthesis
+",Voice synthesis,Singing voice,"Voice as audio
+Voice as movement/gesture/motor control",Single voice,"Real-time processing
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+50,Investigation of Gesture Controlled Articulatory Vocal Synthesizer using a Bio-Mechanical Mapping Layer,2012,"voice model
+force input
+voice synthesis",Voice synthesis,Spoken voice,"Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+51,A Digital Mobile Choir: Joining Two Interfaces towards Composing and Performing Collaborative Mobile Music,2012,"mobile
+multiusers
+choir",Voice synthesis,"Spoken voice
+Singing voice",Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Social/ Collaborative / Networked
+52,A Self-Organizing Gesture Map for a Voice-Controlled Instrument Interface,2013,"mapping
+Voice-Controlled Interface for musical instruments
+voice analysis",Voice as control,Other voice modalities,"Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,,
+53,A Compact Spectrum-Assisted Human Beatboxing Reinforcement Learning Tool On Smartphone,2013,"beyond words
+voice visualization
+music learning
+beatboxing
+expressive",Voice analysis,"Singing voice
+Other voice modalities","Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Voice training,
+54,LOLOL: Laugh Out Loud On Laptop,2013,"expressive
+laughters
+voice modality
+nonlinguistic
+voice synthesis",Voice synthesis,Other voice modalities,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+55,Paralinguistic Microphone,2013,"visual-based
+mouth shapes to sounds
+physical modeling
+model
+movement",Voice transformation/modulation/morphing,Other voice modalities,Voice as movement/gesture/motor control,Single voice,Real-time processing,Voice beyond audio,"face trackers, tongue, "
+56,Digitartic: bi-manual gestural control of articulation in performative singing synthesis,2013,"voice synthesis
+expressive
+gesture
+",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+57,Adaptive mapping for improved pitch accuracy on touch user interfaces,2013,"voice synthesis
+gesture
+",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+58,Designing Empowering Vocal and Tangible Interaction,2013,"accessibility
+","Voice transformation/modulation/morphing
+Voice samples","Singing voice
+Spoken voice
+Other voice modalities",Voice as audio,Multiple voices,"Real-time processing
+Use of voice samples",Voice in performance/experience,Social/ Collaborative / Networked
+59,MAGE 2.0: New Features and its Application in the Development of a Talking Guitar,2013,"voice synthesis
+singing
+expressivity",Voice synthesis,Spoken voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+60,Vocal Vibrations: A Multisensory Experience of the Voice,2014,"vibrations
+exprerience
+modalities
+","Voice transformation/modulation/morphing
+Voice accompaniment","Singing voice
+Other voice modalities","Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Voice beyond audio ,Other / vibrations
+61,Visualizing Gestures in the Control of a Digital Musical Instrument,2014,"audience
+visual feedback
+mapping","Voice synthesis
+Voice accompaniment",Singing voice,"Voice as audio
+Voice as movement/gesture/motor control",Multiple voices,Real-time processing,Voice in performance/experience,Voice visualization
+62,The Talking Guitar: Headstock Tracking and Mapping Strategies,2014,"speech synthesis
+guitare control
+gesture",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Other
+63,Design and Evaluation of a Gesture Controlled Singing Voice Installation,2014,"gesture-based
+voice synthesis
+",Voice synthesis,"Singing voice
+Other voice modalities","Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Voice beyond audio,"face trackers, tongue, "
+64,SynthAssist: Querying an Audio Synthesizer by Vocal Imitation,2014,"voice analysis
+query database ",Voice as control,Singing voice,Voice as audio,Single voice,Real-time processing,Voice as control,Sung
+65,Rule-based performative synthesis of sung syllables,2014,"gesture-based
+voice synthesis
+tablet",Voice synthesis,"Spoken voice
+Singing voice",Voice as audio,Single voice,"Real-time processing
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+66,LiVo: Sing a Song with a Vowel Keyboard,2015,"voice synthesis
+keyboard control",Voice synthesis,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+67,Tibetan Singing Prayer Wheel: A Hybrid Musical- Spiritual Instrument Using Gestural Control,2015,"voice modification
+gesture control",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+68,Rawr! Study in Sonic Skulls: Embodied Natural History,2015,"animal voice!!!
+voice sinthesis
+physical model
+voice modalities (whisper)",Voice transformation/modulation/morphing,Other voice modalities,Voice as audio,Single voice,Real-time processing,Non-human voices,
+69,Evaluating the Audience’s Perception of Real-time Gestural Control and Mapping Mechanisms in Electroacoustic Vocal Performance,2016,"audience
+voice recording",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Single voice,"Real-time processing
+Delayed",Voice in performance/experience,Hand-based gestures
+70,Live Writing: Writing as a Real-time Audiovisual Performance,2016,"visual-based
+voice modalities",Voice accompaniment,Spoken voice,Inner voice,Single voice,Real-time processing,Voice beyond audio ,inner voice
+71,Emovere: Designing Sound Interactions for Biosignals and Dancers,2016,"physiology
+expressive
+voice recording",Voice samples,"Spoken voice
+Other voice modalities",Voice as audio,Multiple voices,"Real-time processing
+Use of voice samples",Voice in performance/experience,Other
+72,Towards Robust Tracking with an Unreliable Motion Sensor Using Machine Learning,2017,"gesture-based
+voice modification",Voice transformation/modulation/morphing,"Singing voice
+Other voice modalities",Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+73,Exploring Playfulness in NIME Design: The Case of Live Looping Tools,2017,"looping
+voice recording","Voice transformation/modulation/morphing
+Voice samples",Singing voice,Voice as audio,Single voice,"Real-time processing
+Delayed
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+74,Vokinesis : syllabic control points for performative singing synthesis,2017,"voice synthesis
+gesture
+tablet
+expressive
+",Voice synthesis,Spoken voice,Voice as audio,Single voice,"Real-time processing
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+75,A Responsive User Body Suit (RUBS),2017,"wearable
+expressive","Voice accompaniment
+Voice samples",Spoken voice,Voice as audio,Single voice,Use of voice samples,Voice in performance/experience,Hand-based gestures
+76,Animated Notation in Multiple Parts for Crowd of Non-Professional Performers,2018,"audience
+voice modalities (scream)",Voice accompaniment,"Singing voice
+Other voice modalities",Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Social/ Collaborative / Networked
+77,Towards New Modes of Collective Musical Expression through Audio Augmented Reality,2018,"AR
+audience
+voice modalities (different body sounds) ",Voice transformation/modulation/morphing,"Singing voice
+Spoken voice
+Other voice modalities",Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Social/ Collaborative / Networked
+78,Vocal Musical Expression with a Tactile Resonating Device and its Psychophysiological Effects,2018,"modalities (vibrations)
+visualisation
+physiology",Voice transformation/modulation/morphing,"Singing voice
+Other voice modalities",Voice as audio,Single voice,Real-time processing,Voice beyond audio ,Other / vibrations
+79,InterFACE: new faces for musical expression,2018,"vision-based
+music synthesis
+face tracking",Voice transformation/modulation/morphing,Other voice modalities,"Voice as audio
+Voice as movement/gesture/motor control
+Inner voice",Single voice,Real-time processing,Voice beyond audio ,"face trackers, tongue"
+80,"The Orchestra of Speech:
+a speech-based instrument system",2018,voice modalities (speech vs music),"Voice transformation/modulation/morphing
+Voice samples",Spoken voice,Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Other
+81,Mechatronic Performance in Computer Music Compositions,2018,"voice analysis
+multiuser
+robots",Voice transformation/modulation/morphing,Singing voice,"Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Non-human voices,
+82,T-Voks: the Singing and Speaking Theremin,2019,"voice synthesis
+gesture based","Voice synthesis
+Voice samples",Singing voice,Voice as audio,Single voice,"Real-time processing
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+83,"INTIMAL: Walking to find place, breathing to feel presence",2019,"recording
+voice modalities (speaking, breathing)","Voice transformation/modulation/morphing
+Voice samples","Spoken voice
+Other voice modalities","Voice as audio
+Voice as movement/gesture/motor control",Multiple voices,"Real-time processing
+Use of voice samples",Voice in performance/experience,Social/ Collaborative / Networked
+84,Grain Prism: Hieroglyphic Interface for Granular Sampling,2019,"voice recording
+gesture based","Voice transformation/modulation/morphing
+Voice samples","Singing voice
+Spoken voice",Voice as audio,Single voice,"Real-time processing
+Use of voice samples",Control of voice synthesis/morphing,Hand-based gestures
+85,A “voice” instrument based on vocal tract models by using soft material for a 3D printer and an electrolarynx,2019,"vocal track model
+3D printed
+voice generation/ synthesis",Voice synthesis,"Singing voice
+Spoken voice","Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+86,Words to Music Synthesis,2020,"voice modality (words)
+music synthesis
+emotional",Voice as control,Spoken voice,Nan,Single voice,Real-time processing,Voice as control,Spoken
+87,Surface Electromyography for Direct Vocal Control,2020,"voice modalities (muscle) 
+voice as controler",Voice transformation/modulation/morphing,Singing voice,"Voice as movement/gesture/motor control
+Inner voice",Single voice,Real-time processing,Control of voice synthesis/morphing,Other (sEMG)
+88,RAW: Exploring Control Structures for Muscle-based Interaction in Collective Improvisation,2020,"voice as controler
+voice analysis",Voice transformation/modulation/morphing,Singing voice,Voice as audio,Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+89,Designing Brain-computer Interfaces for Sonic Expression,2020,"voice modalities
+expressivity
+formants",Voice transformation/modulation/morphing,Singing voice,"Voice as audio
+Inner voice",Single voice,Real-time processing,Control of voice synthesis/morphing,Other (BCI)
+90,Investigation of a Novel Shape Sensor for Musical Expression,2021,,Voice synthesis,Singing voice,"Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Control of voice synthesis/morphing,Hand-based gestures
+91,RhumbLine: Plectrohyla Exquisita — Spatial Listening of Zoomorphic Musical Robots,2021,,Voice synthesis,Other voice modalities,"Voice as audio
+Voice as movement/gesture/motor control",Multiple voices,Real-time processing,Non-human voices,
+92,"Instrument Design for The Furies: A LaptOpera
+
+",2021,,Voice accompaniment,Singing voice,Voice as audio,Multiple voices,Real-time processing,Voice in performance/experience,Other
+93,Click::RAND#2. An Indeterminate Sound Sculpture,2021,,Voice synthesis,Other voice modalities,Inner voice,Single voice,Real-time processing,Non-human voices,
+94,Speculātor: visual soundscape augmentation of natural environments,2021,,Voice as control,Other voice modalities,Voice as audio,Multiple voices,Real-time processing,Non-human voices,
+95,"The Body Electric: A NIME designed through and with the somatic experience of singing
+",2021,,Voice transformation/modulation/morphing,"Singing voice
+Other voice modalities",Voice as movement/gesture/motor control,Single voice,Real-time processing,Voice in performance/experience,Other
+96,"Embodied Gestures: Sculpting Energy-Motion Models into Musical Interfaces
+",2021,,"Voice accompaniment
+Voice samples",Spoken voice,"Voice as audio
+Voice as movement/gesture/motor control",Single voice,Real-time processing,Voice in performance/experience,Other
+97,A Wearable Haptic Interface for Breath Guidance in Vocal Training ,2021,,Voice accompaniment,Other voice modalities,Voice as movement/gesture/motor control,Single voice,Real-time processing,Voice training,

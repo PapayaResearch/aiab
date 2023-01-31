@@ -1,0 +1,14 @@
+light:
+    defaultColor: blue
+    defaultGradient:
+        from: blue
+        to: cyan
+    headerBackground: rgba(200, 200, 200, 0.6)
+    headerShadow:  0px 5px 9px 4px rgba(240, 240, 240, 0.1)
+dark:
+    defaultColor: yellow
+    defaultGradient:
+        from: yellow
+        to: orange
+    headerBackground: 0px 5px 9px 4px rgba(0, 0, 0, 0.2)
+iconSize: 16
