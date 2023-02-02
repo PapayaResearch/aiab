@@ -10,7 +10,7 @@ const Sound = (props) => {
 
     useEffect(() => {
         setAudioContent(null);
-        fetch(`/api/audio?uri=${props.audio}`)
+        fetch((!process.env.NODE_ENV || process.env.NODE_ENV === "development") ? `/api/audio?uri=${props.audio}` : props.audio) // Attempt to fetch audio directly if in production
             .then((res) => res.arrayBuffer())
             .then((res) => props.ctx.decodeAudioData(res))
             .then((res) => {
