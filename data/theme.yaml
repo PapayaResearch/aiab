@@ -12,3 +12,4 @@ dark:
         to: orange
     headerBackground: 0px 5px 9px 4px rgba(0, 0, 0, 0.2)
 iconSize: 16
+fontFamily: Roboto
