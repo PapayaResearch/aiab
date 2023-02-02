@@ -1,7 +1,7 @@
-import { useState, useMemo } from "react";
-import { NativeSelect } from "@mantine/core";
+import { useState, useRef, useMemo } from "react";
+import { Center, Group, Box, NativeSelect, Slider, Text } from "@mantine/core";
 import { useViewportSize } from "@mantine/hooks";
-import Sound from "../components/Sound";
+import AudioMap from "../components/AudioMap";
 
 export async function getStaticProps() {
     const baseURI = "https://web.media.mit.edu/~nsingh1/files/samplesets/";
@@ -30,22 +30,25 @@ export async function getStaticProps() {
     }
 }
 
-const AudioMap = ({ uri, list, coords }: { uri: { [key: string]: string }, list: { [key: string]: string[] }, coords: { [key: string]: number[][] } }) => {
-    const [sampleSet, setSampleSet] = useState("drum");
+const Audio = ({ uri, list, coords }) => {
+    const [sampleSet, setSampleSet] = useState("");
+    const [numSamples, setNumSamples] = useState(200);
 
     const { width, height } = useViewportSize();
+    const ctx = useRef(new AudioContext());
 
     const audioData = useMemo(() => {
-        const offset = (x: number) => (x == 0) ? .000001 : x;
+        if (sampleSet == "") return [];
+        const offset = (x) => (x == 0) ? .000001 : x;
     
         const x = coords[sampleSet].map((coord) => coord[0]);
         const y = coords[sampleSet].map((coord) => coord[1]);
-        const minX = offset(x.reduce((a: number, b: number) => Math.min(a, b)));
-        const maxX = offset(x.reduce((a: number, b: number) => Math.max(a, b)));
-        const minY = offset(y.reduce((a: number, b: number) => Math.min(a, b)));
-        const maxY = offset(y.reduce((a: number, b: number) => Math.max(a, b)));
-        const normalizeX = (x: number) => (x - minX) / (maxX - minX);
-        const normalizeY = (y: number) => (y - minY) / (maxY - minY);
+        const minX = offset(x.reduce((a, b) => Math.min(a, b)));
+        const maxX = offset(x.reduce((a, b) => Math.max(a, b)));
+        const minY = offset(y.reduce((a, b) => Math.min(a, b)));
+        const maxY = offset(y.reduce((a, b) => Math.max(a, b)));
+        const normalizeX = (x) => (x - minX) / (maxX - minX);
+        const normalizeY = (y) => (y - minY) / (maxY - minY);
         
         return list[sampleSet].map((sample, i) => {
             return {
@@ -59,19 +62,32 @@ const AudioMap = ({ uri, list, coords }: { uri: { [key: string]: string }, list:
     
     return (
         <>
-            <NativeSelect
-                data={Object.keys(uri).map((key: string) => key.slice(0, 1).toUpperCase() + key.slice(1).toLowerCase())}
-                label={"Sample Set"}
-                onChange={(event) => setSampleSet(event.currentTarget.value.toLowerCase())}
-                withAsterisk
-                />
-            {
-                audioData.map((audio, i) => {
-                    return <Sound {...audio} key={i}/>
-                })
-            }
+            <Center>
+                <Group grow>
+                    <NativeSelect
+                        data={[...Object.keys(uri).map((key) => key.slice(0, 1).toUpperCase() + key.slice(1).toLowerCase()), ""]}
+                        value={sampleSet.slice(0, 1).toUpperCase() + sampleSet.slice(1).toLowerCase()}
+                        label={"Sample Set"}
+                        onChange={(event) => setSampleSet(event.currentTarget.value.toLowerCase())}
+                        style={{width: 400}}
+                    />
+                    <Box>
+                        <Text size={"sm"}>Num. Samples</Text>
+                    <Slider
+                        min={Math.min(100, audioData.length)}
+                        max={audioData.length}
+                        step={100}
+                        disabled={audioData.length == 0}
+                        value={numSamples}
+                        onChangeEnd={(value) => setNumSamples(value)}
+                        style={{wifth: 400}}
+                    />
+                    </Box>
+                </Group>
+            </Center>
+            <AudioMap audioData={audioData.slice(0, numSamples)} ctx={ctx.current} stoppable={sampleSet == "vocal"}/>
         </>
     );
 }
 
-export default AudioMap;
+export default Audio;

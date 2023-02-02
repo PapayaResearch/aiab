@@ -35,6 +35,18 @@ const nextConfig = {
             use: "raw-loader"
         });
         return config;
+    },
+    async rewrites() {
+        return [
+            {
+                source: "/soundcloud-oembed",
+                destination: "https://soundcloud.com/oembed"
+            },
+            {
+                source: "/nsingh1",
+                destination: "https://media.mit.edu/~nsingh1"
+            }
+        ]
     }
 }
 
