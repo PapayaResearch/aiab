@@ -1,4 +1,4 @@
-import { Title, Text } from "@mantine/core";
+import { Title, Text, Anchor } from "@mantine/core";
 import { Prism } from "@mantine/prism";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
