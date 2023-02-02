@@ -12,9 +12,9 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/server": "^11.10.0",
-    "@mantine/core": "5.8.3",
-    "@mantine/hooks": "5.8.3",
-    "@mantine/next": "5.8.3",
+    "@mantine/core": "^5.8.3",
+    "@mantine/hooks": "^5.8.3",
+    "@mantine/next": "^5.8.3",
     "@mantine/prism": "^5.10.2",
     "@tabler/icons": "^1.113.0",
     "@unified-latex/unified-latex": "^1.2.2",
