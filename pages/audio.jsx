@@ -1,7 +1,9 @@
 import { useState, useRef, useMemo } from "react";
-import { Center, Group, Box, NativeSelect, Slider, Text } from "@mantine/core";
+import { Center, Group, Box, NativeSelect, Slider, Button, Modal, Text } from "@mantine/core";
 import { useViewportSize } from "@mantine/hooks";
 import AudioMap from "../components/AudioMap";
+import AudioEmbedCode from "../components/AudioEmbedCode";
+import code from "../data/audio/code.md";
 
 export async function getStaticProps() {
     const baseURI = "https://web.media.mit.edu/~nsingh1/files/samplesets/";
@@ -33,6 +35,7 @@ export async function getStaticProps() {
 const Audio = ({ uri, list, coords }) => {
     const [sampleSet, setSampleSet] = useState("");
     const [numSamples, setNumSamples] = useState(200);
+    const [showCode, setShowCode] = useState(false);
 
     const { width, height } = useViewportSize();
     const ctx = useRef(new AudioContext());
@@ -73,19 +76,28 @@ const Audio = ({ uri, list, coords }) => {
                     />
                     <Box>
                         <Text size={"sm"}>Num. Samples</Text>
-                    <Slider
-                        min={Math.min(100, audioData.length)}
-                        max={audioData.length}
-                        step={100}
-                        disabled={audioData.length == 0}
-                        value={numSamples}
-                        onChangeEnd={(value) => setNumSamples(value)}
-                        style={{wifth: 400}}
-                    />
+                        <Slider
+                            min={Math.min(100, audioData.length)}
+                            max={audioData.length}
+                            step={100}
+                            disabled={audioData.length == 0}
+                            value={numSamples}
+                            onChangeEnd={(value) => setNumSamples(value)}
+                            style={{wifth: 400}}
+                        />
                     </Box>
+                    <Button size={"sm"} variant={"gradient"} onClick={() => setShowCode((showCode) => !showCode)}>Code for Audio Embedding</Button>
                 </Group>
             </Center>
             <AudioMap audioData={audioData.slice(0, numSamples)} ctx={ctx.current} stoppable={sampleSet == "vocal"}/>
+            <Modal
+                opened={showCode}
+                onClose={() => setShowCode(false)}
+                title={"Code for embedding audio into 2D"}
+                sizer={"100%"}
+            >
+                <AudioEmbedCode code={code}/>
+            </Modal>
         </>
     );
 }
