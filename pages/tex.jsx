@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Text, Title, Anchor, Space, Box, Loader, Center, Group } from "@mantine/core";
 import { parseTeX } from "../lib/utils";
 import { printRaw } from "@unified-latex/unified-latex-util-print-raw";
@@ -14,9 +14,9 @@ const TeX = () => {
     const [bib, setBib] = useState({});
 
     // Get list of figures and tables so all references can be made (either before or after the environment is established in the render tree)
-    const figures = Object.fromEntries([...paper.matchAll(/\\label{fig:([^}]+)}/g)].map((x, i) => ["fig:" + x[1], i + 1]));
-    const tables = Object.fromEntries([...paper.matchAll(/\\label{tab:([^}]+)}/g)].map((x, i) => ["tab:" + x[1], i + 1]));
-    const algorithms = Object.fromEntries([...paper.matchAll(/\\label{algo:([^}]+)}/g)].map((x, i) => ["algo:" + x[1], i + 1]));
+    const figures = useMemo(() => Object.fromEntries([...paper.matchAll(/\\label{fig:([^}]+)}/g)].map((x, i) => ["fig:" + x[1], i + 1])), []);
+    const tables = useMemo(() => Object.fromEntries([...paper.matchAll(/\\label{tab:([^}]+)}/g)].map((x, i) => ["tab:" + x[1], i + 1])), []);
+    const algorithms = useMemo(() => Object.fromEntries([...paper.matchAll(/\\label{algo:([^}]+)}/g)].map((x, i) => ["algo:" + x[1], i + 1])), []);
 
     // This function defines rendering logic for various types of TeX objects by using their representations in the unified-parsed Abstract Syntax Tree (AST)
     // Since it's a tree, some nodes have sub-nodes which are rendered recursively (e.g. by calling render() on each sub-node in a node's content array)

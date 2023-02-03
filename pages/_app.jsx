@@ -3,9 +3,10 @@ import NextApp from "next/app";
 import { useRouter } from "next/router";
 import { getCookie, setCookie } from "cookies-next";
 import Head from "next/head";
-import { MantineProvider, ColorSchemeProvider, AppShell, Center, Header, Title, Text, Grid, ActionIcon } from "@mantine/core";
+import { MantineProvider, ColorSchemeProvider, Container, Center, Header, Title, Text, Grid, ActionIcon } from "@mantine/core";
 import { IconMoon, IconSun } from "@tabler/icons";
 import { MathJaxContext } from "better-react-mathjax";
+import config from "../next.config";
 import myTheme from "../data/theme.yaml";
 
 export default function App(props) {
@@ -28,6 +29,7 @@ export default function App(props) {
                 <title>How to Put Almost Anything in a Browser</title>
                 <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
                 <link rel="shortcut icon" href="/favicon.svg" />
+                <base href={(config.basePath ?? "") + "/"}/>
             </Head>
 
 
@@ -56,9 +58,9 @@ export default function App(props) {
                     {doRender &&
                         <MathJaxContext>
                             <Center>
-                                <AppShell style={{width: "100%", maxWidth: "96em"}}>
-                                    <Header height={100} sx={(theme) => ({backgroundColor: myTheme[theme.colorScheme].headerBackground, boxShadow: myTheme[theme.colorScheme].headerShadow})}>
-                                        <Grid columns={3} m={"md"} justify={"space-between"}>
+                                <Container style={{width: "100%", maxWidth: "96em"}}>
+                                    <Header height={"auto"} mb={40} sx={(theme) => ({backgroundColor: myTheme[theme.colorScheme].headerBackground, boxShadow: myTheme[theme.colorScheme].headerShadow})}>
+                                        <Grid columns={2} m={"md"} justify={"space-between"}>
                                             <div>
                                                 <Title order={1} size={20} p={"md"} display={"inline"} onClick={() => router.push("/")} style={{fontVariant: "small-caps"}}>How to Put Almost Anything in a Browser</Title>
                                                 <Title order={2} size={12} p={"md"} pt={"xs"} pb={0} color={"dimmed"} style={{fontVariant: "small-caps"}}>MIT Media Lab</Title>
@@ -73,7 +75,7 @@ export default function App(props) {
                                         </Grid>
                                     </Header>
                                     <Component {...pageProps}/>
-                                </AppShell>
+                                </Container>
                             </Center>
                         </MathJaxContext>}
                 </MantineProvider>
