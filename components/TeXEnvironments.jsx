@@ -1,5 +1,6 @@
 import { Box, Center, Image, Table, Text, Title, Anchor, HoverCard } from "@mantine/core";
 import { normalizeFieldValue } from "bibtex";
+import config from "../next.config";
 
 export const TeXCitation = ({ node, bib }) => {
     const ref = node.args[1].content[0].content.toLowerCase();
@@ -76,7 +77,7 @@ export const TeXFigure = ({ node, figures, render }) => {
     return (
         <Center id={figName}>
             <Box pb={"xl"} pt={"sm"} style={{maxWidth: `calc(${node.env === "figure*" ? "100%" : "50%"} * ${wScale})`}}>
-                <Image src={"tex/" + fig} alt={fig}/>
+                <Image src={(config.basePath ?? "") + "/tex/" + fig} alt={fig}/>
                 <Text size={"sm"} color={"dimmed"} align={"justify"}><b>Figure {figures[figName]}. </b>{caption}</Text>
             </Box>
         </Center>
@@ -91,7 +92,7 @@ export const TeXStripFigure = ({ node, figures, render }) => {
     return (
         <Center id={sName}>
             <Box pb={"xl"} pt={"sm"} style={{maxWidth: "100%"}}>
-                <Image src={"tex/" + content} alt={content}/>
+                <Image src={(config.basePath ?? "") + "/tex/" + content} alt={content}/>
                 <Text size={"sm"} color={"dimmed"} align={"justify"}><b>Figure {figures[sName]}. </b>{sCaption}</Text>
             </Box>
         </Center>
