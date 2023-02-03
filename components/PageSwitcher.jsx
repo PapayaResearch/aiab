@@ -16,7 +16,7 @@ const PageSwitcher = () => {
     return (
         <Group position="center" mt="xl" grow>
             {Object.entries(pages).map(([key, value], i) =>
-                <ActionIcon
+                <ActionIcon // Big button with corresponding icon for each page
                     key={i}
                     onClick={() => router.push(`/${key}`)}
                     size={240}
