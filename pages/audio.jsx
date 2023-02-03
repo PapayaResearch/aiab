@@ -6,7 +6,7 @@ import AudioEmbedCode from "../components/AudioEmbedCode";
 import code from "../data/audio/code.md";
 
 export async function getStaticProps() {
-    const baseURI = "http://chennai.media.mit.edu/samplesets/";
+    const baseURI = "https://chennai.media.mit.edu/samplesets/";
     const drumURI = baseURI + "drum/";
     const vocalURI = baseURI + "vocal/";
 
