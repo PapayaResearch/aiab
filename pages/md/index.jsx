@@ -20,16 +20,16 @@ const Posts = ({ posts }) => {
         <>
             <Text>Nothing inspires forgiveness quite like revenge.</Text>
             <br/>
-                {posts.map((post, i) =>
-                    <Grid key={i} justify={"space-between"} p={"xs"}>
-                        <Anchor href={"/md/" + post.path} target={"_self"} key={i}>
-                            <Text size={"xl"}>{post.info.name}</Text>
-                        </Anchor>
-                        <Text size={"sm"}>
-                            {post.info.date}
-                        </Text>
-                    </Grid>
-                )}
+            {posts.map((post, i) => (
+                <Grid key={i} justify={"space-between"} p={"xs"}>
+                    <Anchor href={"/md/" + post.path} target={"_self"} key={i}>
+                        <Text size={"xl"}>{post.info.name}</Text>
+                    </Anchor>
+                    <Text size={"sm"}>
+                        {post.info.date}
+                    </Text>
+                </Grid>
+            ))}
         </>
     );
 }

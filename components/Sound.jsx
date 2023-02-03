@@ -6,11 +6,11 @@ const Sound = (props) => {
     const [audioContent, setAudioContent] = useState(null);
     const [isHovered, setIsHovered] = useState(false);
     const [isPlaying, setIsPlaying] = useState(false);
-    const source = useRef(props.ctx.createBufferSource());
+    const source = useRef(props.ctx.createBufferSource()); // Use ref to persist the node across renders for playback
 
     useEffect(() => {
-        setAudioContent(null);
-        fetch((!process.env.NODE_ENV || process.env.NODE_ENV === "development") ? `/api/audio?uri=${props.audio}` : props.audio) // Attempt to fetch audio directly if in production
+        setAudioContent(null); // Clear sound
+        fetch((!process.env.NODE_ENV || process.env.NODE_ENV === "development") ? `/api/audio?uri=${props.audio}` : props.audio) // Attempt to fetch audio directly if in production (assumes a CORS-enabled server, at least for the deployment requester)
             .then((res) => res.arrayBuffer())
             .then((res) => props.ctx.decodeAudioData(res))
             .then((res) => {
@@ -23,7 +23,7 @@ const Sound = (props) => {
     }, [props.audio, props.ctx]);
 
     const toggleAudio = (play) => {
-        if (!audioContent) return;
+        if (!audioContent) return; // If no audio set
         if (play) {
             source.current = props.ctx.createBufferSource();
             source.current.buffer = audioContent;

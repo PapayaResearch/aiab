@@ -26,10 +26,10 @@ export async function getStaticPaths() {
 }
 
 const ProjectPage = ({ pageContent }) => {
-    const router = useRouter();
+    const router = useRouter(); // Get the router to navigate back to list of posts
 
 
-    const mdComponents = { // Independent components
+    const mdComponents = { // Render markdown elements as React components
         h2: (props) => <Title {...props} order={3} variant="gradient" opacity={0.8} style={{paddingBottom: 10}}/>,
         h4: (props) => <Title {...props} order={5} variant="gradient" style={{paddingTop: 20, paddingBottom: 0}}/>,
         p: (props) => <Text {...props} style={{paddingTop: 10, paddingBottom: 10}}/>,
