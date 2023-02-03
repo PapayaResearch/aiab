@@ -26,31 +26,37 @@ To get started with the repository using Github Codespaces, follow these steps:
   <img width="80%" height="80%" src="https://i.imgur.com/1Lj3Nhv.png">
 </p>
 
-3. Once you have your repository, click the `Code` button and then click the `Codespaces` tab.
+3. Go to `Settings` -> `Actions` -> `General` and change the following option:
+
+<p align="center">
+  <img width="70%" height="70%" src="https://i.imgur.com/UjlEc1T.png">
+</p>
+
+4. Once you have your repository, click the `Code` button and then click the `Codespaces` tab.
 
 <p align="center">
   <img width="50%" height="50%" src="https://i.imgur.com/4SkLT6m.png">
 </p>
 
-4. Click "Create codespaces on main" to launch the Codespaces environment.
+5. Click "Create codespaces on main" to launch the Codespaces environment.
 
 <p align="center">
   <img width="40%" height="40%" src="https://i.imgur.com/WGzdOvd.png">
 </p>
 
-5. Wait for the environment to be fully set up (approx. 5 min). After a minute you should see this:
+6. Wait for the environment to be fully set up (approx. 5 min). After a minute you should see this:
 
 <p align="center">
   <img width="70%" height="70%" src="https://i.imgur.com/PBWeMqf.png">
 </p>
 
-6. Once the installation is done, you can launch the website locally.
+7. Once the installation is done, you can launch the website locally.
 
 ```bash=
 npm run dev
 ```
 
-7. You should see a pop-up in the bottom right corner. Click "Open in Browser" to see our template.
+8. You should see a pop-up in the bottom right corner. Click "Open in Browser" to see our template.
 
 <p align="center">
   <img width="50%" height="50%" src="https://i.imgur.com/LkpDl1G.png">
