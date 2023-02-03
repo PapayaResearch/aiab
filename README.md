@@ -61,9 +61,9 @@ npm run dev
 
 The following resources may be helpful as you work through the code in this repository:
 
-- [React Documentation](https://reactjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [Next.js Documentation](https://nextjs.org/docs)
-- [Mantine Documentation](https://mantine.dev)
+- [Mantine Documentation](https://mantine.dev/pages/getting-started/)
 
 ## Contributing
 
