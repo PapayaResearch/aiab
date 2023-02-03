@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { ActionIcon, Group } from "@mantine/core";
-import { IconTex, IconMarkdown, IconTable, IconList, IconGrain } from "@tabler/icons";
+import { IconTex, IconMarkdown, IconTable, IconList, IconGrain, IconSourceCode } from "@tabler/icons";
 
 const PageSwitcher = () => {
     const router = useRouter();
@@ -10,7 +10,8 @@ const PageSwitcher = () => {
         "md": <IconMarkdown size={200} stroke={1.5} />,
         "csv": <IconTable size={200} stroke={1.5} />,
         "yaml": <IconList size={200} stroke={1.5} />,
-        "audio": <IconGrain size={200} stroke={1.5} />
+        "audio": <IconGrain size={200} stroke={1.5} />,
+        "mantine": <IconSourceCode size={200} stroke={1.5} />,
     }
 
     return (
@@ -19,7 +20,7 @@ const PageSwitcher = () => {
                 <ActionIcon // Big button with corresponding icon for each page
                     key={i}
                     onClick={() => router.push(`/${key}`)}
-                    size={240}
+                    size={180}
                     sx={(theme) => ({
                     backgroundColor:
                         theme.colorScheme === "dark" ? theme.colors.dark[6] : theme.colors.light,
