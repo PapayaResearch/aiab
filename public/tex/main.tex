@@ -148,12 +148,12 @@ The encoder module combines image feature extraction with depth estimation to pr
     \For{number of epochs}{
     Sample $B$ training images; \\
     Get depth $x_d = M(x)$; \\
-    Append depth features to RGB channels ($y \oplus y_d$); \\
+    Append depth features to RGB channels ($ y \oplus {y_d} $); \\
     Encoder image to feature-vector ($E(\tilde{x})$); \\
-    Append noise ($z = E(\tilde{x}) \oplus u$;
+    Append noise ($z = E(\tilde{x}) \oplus u$);
     \\ Generate spectrogram ($G(z)$);
-    \\ Forward pass through discriminator with either fake or real spectrogram ($D(G(z)| E(\tilde{x})$ OR $D(y | E(\tilde{x}))$);
-    \\ Backward pass: update parameters for discriminator ($W_D$), generator ($W_G$), and encoder ($W_E$);
+    \\ Forward pass through discriminator with either fake or real spectrogram ($D(G(z)| E(\tilde{x}))$ OR $D(y | E(\tilde{x}))$);
+    \\ Backward pass: update parameters for discriminator (${W_D}$), generator (${W_G}$), and encoder (${W_E}$);
     }
 \end{algorithm}
 
@@ -164,13 +164,13 @@ The encoder module combines image feature extraction with depth estimation to pr
         Notation & Definition \\
         \hline
          x & input image \\
-         $x_d$ & estimated depth map \\
+         ${x_d}$ & estimated depth map \\
          $\oplus$ & concatenation operator\\
-         $\tilde{x}$ & image with depth map ($x \oplus x_d$) \\
+         $\tilde{x}$ & image with depth map ($x \oplus {x_d}$) \\
          $y$ & Real spectrogram \\
          $E, G, D$ & Encoder, Generator, Discriminator\\
          $M$ & Monodepth2 Encoder-Decoder \\
-         $W_*$ & weights for a model \\
+         ${W_*}$ & weights for a model \\
          $u$ & Noise, $u \sim \mathcal{N}(0, 1) $\\
          $z$ & Latent vector, encoder output and noise\\ & ($E(\tilde{x}) \oplus u$) \\
     \end{tabular}
@@ -188,13 +188,13 @@ We use the least-squares GAN formulation (LSGAN) \cite{mao2017least}. For the di
 \end{split}
 \end{align}
 
-For the generator, we introduce two additional terms to encourage realistic and high-quality output. First, we add an $\ell 1$ reconstruction term, scaled by a hyperparameter ($\lambda_a = 100$ in our case). This is a common approach in image and audio settings. Second, we introduce a domain-specific term that performs an estimation of the $T_{60}$ values, the time it takes for the reverberation to decay by $60dB$, for the real and generated samples, and returns the absolute percent error between the two scaled by a hyperparameter ($\lambda_b=100$ again). We term the differentiable $T_{60}$ proxy measure $T_{60_p}$. To compute this for log-spectrogram $x$, we first get the linear spectrogram $e^x$ and then sum along the time axis to obtain a fullband amplitude envelope. We use Schroeder's backward integration method to obtain a decay curve from the squared signal, and linearly extrapolate from the $-20dB$ point to get a $T_{60}$ estimate. In all:
+For the generator, we introduce two additional terms to encourage realistic and high-quality output. First, we add an $\ell 1$ reconstruction term, scaled by a hyperparameter ($\lambda_a = 100$ in our case). This is a common approach in image and audio settings. Second, we introduce a domain-specific term that performs an estimation of the ${T_{60}}$ values, the time it takes for the reverberation to decay by $60dB$, for the real and generated samples, and returns the absolute percent error between the two scaled by a hyperparameter ($\lambda_b=100$ again). We term the differentiable ${T_{60}}$ proxy measure ${T_{60_p}}$. To compute this for log-spectrogram $x$, we first get the linear spectrogram $e^x$ and then sum along the time axis to obtain a fullband amplitude envelope. We use Schroeder's backward integration method to obtain a decay curve from the squared signal, and linearly extrapolate from the $-20dB$ point to get a ${T_{60}}$ estimate. In all:
 
 \begin{align}
 \begin{split}
     \underset{G}{\text{min}}\ V(G) &= \mathbb{E}_{\mathbf{z} \sim p_{z}(\mathbf{z})} \left[ \right. (1 - D(G(z)\ |\ E(\tilde{x}))^2\\ 
-     & + \lambda_a \left\lVert G(z) - y \right\rVert_1 \\
-     & + \left. \lambda_b \left\lvert \dfrac{T_{60_p}(G(z)) - T_{60_p}(y)}{T_{60_p}(y)} \right\rvert \right] 
+     & + {\lambda_a} \left\lVert G(z) - y \right\rVert {_1} \\
+     & + \left. {\lambda_b} \left\lvert \dfrac{{T_{60_p}}(G(z)) - {T_{60_p}}(y)}{{T_{60_p}}(y)} \right\rvert \right] 
 \end{split}
 \end{align}
 
@@ -207,9 +207,9 @@ We train our model on 8 NVIDIA 1080 Ti GPUs. Three Adam optimizers for each of t
     \begin{tabular}{c|c}
         Parameter & Value\\
         \hline
-        $\eta_G$ & 4e-4\\
-        $\eta_D$ & 2e-4\\
-        $\eta_E$ & 1e-5\\
+        ${\eta_G}$ & 4e-4\\
+        ${\eta_D}$ & 2e-4\\
+        ${\eta_E}$ & 1e-5\\
         $\beta$ & (0.0, 0.99)\\
         $\epsilon$ & 1e-8\\
     \end{tabular}
@@ -229,7 +229,7 @@ We strongly encourage the reader to explore these examples on the accompanying w
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{p_gt_ir_sig.png}
-    \caption{Ground-truth measured IRs vs generated IRs. Columns show input images, depth maps, measured IRs with corresponding convolved speech, and generated IRs with corresponding convolved speech. Larger indoor spaces here tend to exhibit greater $T_{60}$ times with longer measured impulse responses. The outdoor scene has a very short measured IR and corresponding generated IR. Input images are all examples that were used in the expert survey and were drawn from the test set.}
+    \caption{Ground-truth measured IRs vs generated IRs. Columns show input images, depth maps, measured IRs with corresponding convolved speech, and generated IRs with corresponding convolved speech. Larger indoor spaces here tend to exhibit greater ${T_{60}}$ times with longer measured impulse responses. The outdoor scene has a very short measured IR and corresponding generated IR. Input images are all examples that were used in the expert survey and were drawn from the test set.}
     \label{fig:p_groundtruth}
 \end{figure}
 
@@ -248,14 +248,14 @@ We strongly encourage the reader to explore these examples on the accompanying w
 \end{figure}
 
 \subsection{Ablation Study}
-To understand the contribution of key architectural components and decisions, we perform a study to characterize how removing each affects test set $T_{60}$ estimation after 50 training epochs. The three components are the depth maps, the $T_{60_p}$ objective term, and the pretrained Places365 weights for the ResNet50 encoder. Figure \ref{fig:models_comparison} shows $T_{60}$ error distributions over the test set for each of these model variants, and Table \ref{tab:modelcomparison_metrics} reports descriptive statistics.
+To understand the contribution of key architectural components and decisions, we perform a study to characterize how removing each affects test set ${T_{60}}$ estimation after 50 training epochs. The three components are the depth maps, the ${T_{60_p}}$ objective term, and the pretrained Places365 weights for the ResNet50 encoder. Figure \ref{fig:models_comparison} shows ${T_{60}}$ error distributions over the test set for each of these model variants, and Table \ref{tab:modelcomparison_metrics} reports descriptive statistics.
 
-Our model reflects better mean error (closer to 0\%) and less dispersion (a lower standard deviation) than the other variants. The former is well within the just noticeable difference (JND) bounds for $T_{60}$, often estimated as being around 25-30\% for a musical signal \cite{jndt60}. Additionally, this is an upper bound on authenticity: a more rigorous goal then perceptual plausibility \cite{pellegrini2001quality}. The lower standard deviation indicates generally more consistent performance from this model across different examples, even in the presence of some that cause relatively large estimation errors due to incorrect interpretation of relevant qualities in the image, or inaccurate/noisy synthesis or estimation.
+Our model reflects better mean error (closer to 0\%) and less dispersion (a lower standard deviation) than the other variants. The former is well within the just noticeable difference (JND) bounds for ${T_{60}}$, often estimated as being around 25-30\% for a musical signal \cite{jndt60}. Additionally, this is an upper bound on authenticity: a more rigorous goal then perceptual plausibility \cite{pellegrini2001quality}. The lower standard deviation indicates generally more consistent performance from this model across different examples, even in the presence of some that cause relatively large estimation errors due to incorrect interpretation of relevant qualities in the image, or inaccurate/noisy synthesis or estimation.
 
 \begin{figure}
     \centering
     \includegraphics[width=\columnwidth]{t60_errord.png}
-    \caption{$T_{60}$ estimation error (\%) distributions from each model version. $T_{60}$ estimates how long it takes the reverberation to decay by $60dB$. ``Main" is our architecture as described earlier, ``No Depth" omits the depth maps, ``No T60P" omits the differentiable $T_{60_p}$ objective term, and ``No Places" uses randomly initialized encoder weights. ``NN" applies a nearest-neighbor approach with Places365-ResNet50 embeddings for images (errors clipped to 2000\% for clarity). Descriptive statistics are given in Table \ref{tab:modelcomparison_metrics}.}
+    \caption{${T_{60}}$ estimation error (\%) distributions from each model version. ${T_{60}}$ estimates how long it takes the reverberation to decay by $60dB$. ``Main" is our architecture as described earlier, ``No Depth" omits the depth maps, ``No T60P" omits the differentiable ${T_{60_p}}$ objective term, and ``No Places" uses randomly initialized encoder weights. ``NN" applies a nearest-neighbor approach with Places365-ResNet50 embeddings for images (errors clipped to 2000\% for clarity). Descriptive statistics are given in Table \ref{tab:modelcomparison_metrics}.}
     \label{fig:models_comparison}
 \end{figure}
 
@@ -263,13 +263,12 @@ Our model reflects better mean error (closer to 0\%) and less dispersion (a lowe
     \small
     \centering
     \begin{tabular}{ccccccc}
-        & & Main & -Depth & -$T_{60_p}$ & -P365 & NN\\
+        & & Main & -Depth & -${T_{60_p}}$ & -P365 & NN\\
         \hline
-        \multirow{4}{*}{\begin{tabular}{c} $T_{60}$ Err\\ (\%)\\ \  \end{tabular}}
         & $\mu$ & \textbf{-6.03} & -9.17 & -7.1 & 43.15 & 149\\
         & $\sigma$ & \textbf{78.8} & 83.1 & 85.97 & 144.3 & 491.02\\\\
     \end{tabular}
-    \caption{$T_{60}$ estimation error (\%) statistics from each model version. ``Main" is our architecture as described earlier, ``-Depth" omits depth maps,``-$T_{60_p}$" omits the differentiable $T_{60_p}$ objective term, and ``-P365" does not use the pretrained Places365 weights for the ResNet50 encoder. ``NN" indicates a nearest-neighbor approach with Places365-ResNet50 embeddings for images. For mean and median, values closer to 0 reflect better performance. For the standard deviation, lower values reflect better performance. Distributions are visualized in Figure \ref{fig:models_comparison}.}
+    \caption{${T_{60}}$ estimation error (\%) statistics from each model version. ``Main" is our architecture as described earlier, ``-Depth" omits depth maps,``-${T_{60_p}}$" omits the differentiable ${T_{60_p}}$ objective term, and ``-P365" does not use the pretrained Places365 weights for the ResNet50 encoder. ``NN" indicates a nearest-neighbor approach with Places365-ResNet50 embeddings for images. For mean and median, values closer to 0 reflect better performance. For the standard deviation, lower values reflect better performance. Distributions are visualized in Figure \ref{fig:models_comparison}.}
     \label{tab:modelcomparison_metrics}
 \end{table}
 
@@ -310,25 +309,24 @@ Subsequent tests for simple main effects with paired two one-sided tests indicat
 \subsection{Model Behavior and Interpretation}
 
 \paragraph{Effect of varying depth.}
-We compare the full estimated depth map with constant depth maps filled with either 0 or 0.5 (chosen based on the approximate lower and upper bounds of our data). We survey the distributions of generated IRs' $T_{60}$ values over our test set, the results of which are shown in Figure \ref{fig:t60_distributions}. Table \ref{tab:t60_distributions} reports descriptive statistics for these distributions, showing that the main model's output IRs' decay times are biased lower by the 0-depth input and higher by the 0.5-depth input respectively. These may indicate some potential for steering the model in interactive settings. We do note, however, that behavior with constant depth values greater than 0.5 is less predictable. This may be due to the presence of outdoor scenes, for which the scene's depth may not be correlated with IR duration. 
+We compare the full estimated depth map with constant depth maps filled with either 0 or 0.5 (chosen based on the approximate lower and upper bounds of our data). We survey the distributions of generated IRs' ${T_{60}}$ values over our test set, the results of which are shown in Figure \ref{fig:t60_distributions}. Table \ref{tab:t60_distributions} reports descriptive statistics for these distributions, showing that the main model's output IRs' decay times are biased lower by the 0-depth input and higher by the 0.5-depth input respectively. These may indicate some potential for steering the model in interactive settings. We do note, however, that behavior with constant depth values greater than 0.5 is less predictable. This may be due to the presence of outdoor scenes, for which the scene's depth may not be correlated with IR duration. 
 
 \begin{figure}
     \centering
     \includegraphics[width=0.4\textwidth]{t60_kde.png}
-    \caption{Effect of Depth on $T_{60}$. Distributions of estimated $T_{60}$ values for the model with estimated depth maps, plus constant depth maps set to either 0 (low) or 0.5 (high). Manipulating the depth value allows us to ``suggest" smaller or larger scenes, i.e. bias the output of the model. Table \ref{tab:t60_distributions} shows corresponding descriptive statistics. These results indicate a level of ``steerability" for the model's behavior in human-in-the-loop settings.}
+    \caption{Effect of Depth on ${T_{60}}$. Distributions of estimated ${T_{60}}$ values for the model with estimated depth maps, plus constant depth maps set to either 0 (low) or 0.5 (high). Manipulating the depth value allows us to ``suggest" smaller or larger scenes, i.e. bias the output of the model. Table \ref{tab:t60_distributions} shows corresponding descriptive statistics. These results indicate a level of ``steerability" for the model's behavior in human-in-the-loop settings.}
     \label{fig:t60_distributions}
 \end{figure}
 
 \begin{table}
     \small
     \centering
-    \begin{tabular}{ccccc}
-        & & Main & Depth 0 & Depth 0.5\\
+    \begin{tabular}{cccc}
+        & Main & Depth 0 & Depth 0.5\\
         \hline
-        \multirow{4}{*}{$T_{60}$ (s)}
-        & $\mu$ & 2.07 & 2.01 & 3.62\\
-        & $\sigma$ & 1.54 & 0.87 & 2.36\\
-        & $Mdn.$ & 2.69 & 2.00 & 3.07\\
+        $\mu$ & 2.07 & 2.01 & 3.62\\
+        $\sigma$ & 1.54 & 0.87 & 2.36\\
+        Mdn. & 2.69 & 2.00 & 3.07\\
     \end{tabular}
     \caption{Descriptive statistics for the model with estimated depth maps, as well as constant depth maps set to either 0 or 0.5. The full depth map's results are between that of the 0 and 0.5 depth maps. Figure \ref{fig:t60_distributions} visulizes the corresponding distributions.}
     \label{tab:t60_distributions}
@@ -368,8 +366,5 @@ We thank the reviewers for their thorough feedback and useful suggestions. Addit
 \bibliographystyle{ieee_fullname}
 \bibliography{main}
 }
-
-\appendix
-\input{supplementary}
 
 \end{document}
