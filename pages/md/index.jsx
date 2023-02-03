@@ -1,4 +1,5 @@
 import { Anchor, Text, Grid } from "@mantine/core";
+import { useRouter } from "next/router";
 
 export async function getStaticProps() {
     const { getAllYAMLMarkdownFromFolder } = await import("../../lib/staticutils");
@@ -12,6 +13,7 @@ export async function getStaticProps() {
 }
 
 const Posts = ({ posts }) => {
+    const router = useRouter();
     if (!posts) {
         return null;
     }
@@ -22,7 +24,7 @@ const Posts = ({ posts }) => {
             <br/>
             {posts.map((post, i) => (
                 <Grid key={i} justify={"space-between"} p={"xs"}>
-                    <Anchor href={"/md/" + post.path} target={"_self"} key={i}>
+                    <Anchor onClick={() => router.push("/md/" + post.path)} key={i}>
                         <Text size={"xl"}>{post.info.name}</Text>
                     </Anchor>
                     <Text size={"sm"}>
