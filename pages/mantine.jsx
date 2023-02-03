@@ -10,11 +10,11 @@ const Mantine = () => {
                 </Title>
             </Anchor>
             <Container>
-                <Text>I'm a container, by default I'm in the center.</Text>
+                <Text>I&apos;m a container, by default I&apos;m in the center.</Text>
             </Container>
             <br/>
             <Container fluid>
-                <Text>I'm a fluid container, I take more space!</Text>
+                <Text>I&apos;m a fluid container, I take more space!</Text>
             </Container>
             <br/>
             <Text>You can also have grids...</Text>
@@ -23,18 +23,21 @@ const Mantine = () => {
                     <Image
                         radius="md"
                         src="https://images.unsplash.com/photo-1591362954553-32e679d4adcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2921&q=80"
+                        alt="random image"
                     />
                 </Grid.Col>
                 <Grid.Col span={4}>
                     <Image
                         radius="md"
                         src="https://images.unsplash.com/photo-1674821782079-e77a8e911118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1775&q=80"
+                        alt="random image"
                     />
                 </Grid.Col>
                 <Grid.Col span={4}>
                     <Image
                         radius="md"
                         src="https://thispersondoesnotexist.com/image"
+                        alt="random image"
                     />
                 </Grid.Col>
             </Grid>
@@ -45,30 +48,35 @@ const Mantine = () => {
                     <Image
                         radius="md"
                         src="https://images.unsplash.com/photo-1672175263631-98dbe0e06370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80"
+                        alt="random image"
                     />
                 </Grid.Col>
                 <Grid.Col span={4}>
                     <Image
                         radius="md"
                         src="https://images.unsplash.com/photo-1673697822947-9bb5faef1f26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                        alt="random image"
                     />
                 </Grid.Col>
                 <Grid.Col span={4}>
                     <Image
                         radius="md"
                         src="https://images.unsplash.com/photo-1674573070648-640a3e57ccdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                        alt="random image"
                     />
                 </Grid.Col>
                 <Grid.Col span={4}>
                     <Image
                         radius="md"
                         src="https://images.unsplash.com/photo-1674571289827-c45050235e3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                        alt="random image"
                     />
                 </Grid.Col>
                 <Grid.Col span={4}>
                     <Image
                         radius="md"
                         src="https://images.unsplash.com/photo-1674673243921-9e6ab580431f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1748&q=80"
+                        alt="random image"
                     />
                 </Grid.Col>
             </Grid>
@@ -105,14 +113,17 @@ const Mantine = () => {
                 <Image
                     radius="md"
                     src="https://images.unsplash.com/photo-1674551246022-15364ae56a7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    alt="random image"
                 />
                 <Image
                     radius="md"
                     src="https://images.unsplash.com/photo-1671967616401-cf8e28b8de4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                    alt="random image"
                 />
                 <Image
                     radius="md"
                     src="https://images.unsplash.com/photo-1674545187688-720f98297463?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2232&q=80"
+                    alt="random image"
                 />
             </Stack>
         </>
